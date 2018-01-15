@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.counterview.MainActivity">
+
+    <com.example.counterview.CounterView.MyLinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="#f7999cab">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:text="@string/text_content"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#90ff33"
+            android:text="@string/text_content"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#f00342"
+            android:text="@string/text_content"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#27f003"
+            android:text="@string/text_content"/>
+
+    </com.example.counterview.CounterView.MyLinearLayout>
+
+</LinearLayout>

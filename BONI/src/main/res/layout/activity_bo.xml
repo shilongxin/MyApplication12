@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.d.boni.BoActivity"
+    android:background="@drawable/sss">
+
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/finsh"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_down"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bo_text1"
+                android:text="1111"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/bo_text2"
+                android:text="1111"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/bo_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/linear2"
+        android:id="@+id/linear3"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:id="@+id/text_start"
+            android:layout_weight="1"
+            />
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/seekbar"
+            android:layout_weight="5"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:id="@+id/text_stop"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:clickable="true"
+            android:src="@mipmap/ic_play_btn_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:clickable="true"
+            android:src="@mipmap/ic_play_btn_prev"
+            android:layout_weight="1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/image_shang"
+            />
+
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:id="@+id/radio_playm"
+            android:background="@drawable/bo"
+            android:button="@null"
+            />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_play_btn_next_pressed"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/image_xia"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
